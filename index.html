@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de cartas de personajes</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Generador de cards de personajes</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <input type="text" id="search" placeholder="Buscar personaje...">
+            <button id="generate-card">Generar card</button>
+            <button id="generate-multiple">Generar varias cards</button>
+        </div>
+        <div class="card-container" id="cards-container">
+            <!-- Aquí se dibujarán las cards -->
+        </div>
+    </main>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <label for="card-quantity">¿Cuántas cards desea crear?</label>
+            <input type="number" id="card-quantity" min="1" max="10">
+            <button id="confirm-generate">Generar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
